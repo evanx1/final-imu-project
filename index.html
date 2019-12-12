@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+    <script src="https://cdn.jsdelivr.net/npm/paho-mqtt@1.1.0/paho-mqtt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.6/build/dat.gui.min.js"></script>
 <head>
+       
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>p5.js Project</title>
@@ -11,11 +14,13 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js" crossorigin="anonymous"></script>
 </head>
 
-<body></body>
+<body>
+<img src = "mpfloor2.jpg" width = 80% />
+</body>
 
 <script type="module">
     import * as sketch from "./sketch.js";
     Object.keys(sketch).forEach(name => window[name] = sketch[name]);
-</script>
+</script> 
 
-</html>
+</html> 
