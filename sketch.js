@@ -12,17 +12,20 @@ let button;
 // let liquid
 
 export function preload(){
-    mySound = loadSound('samplepond.wav');
+    mySound = loadSound('koi fish.wav');
     // mySound.play();
 }
 
 // Code in this function is run once, when the sketch is started.
 export function setup() {
+
+    createCanvas(windowWidth , windowHeight)
+    img = loadImage('koi2.png') 
     button = createButton('play me!')
     button.position(350,200)
     button.mousePressed(liquid)
-    createCanvas(windowWidth , windowHeight)
-    img = loadImage('koi2.png') 
+    // createCanvas(windowWidth , windowHeight)
+    // img = loadImage('koi2.png') 
 
     
 }
