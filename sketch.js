@@ -22,13 +22,16 @@ export function preload(){
 
 // Code in this function is run once, when the sketch is started.
 export function setup() {
+    
 
     createCanvas(windowWidth , windowHeight)
-    img = loadImage('koi2.png') 
-    img2 = loadImage('koidock1.png')
     button = createButton('play me!')
     button.position(350,200)
     button.mousePressed(liquid)
+  
+    img2 = loadImage('koidock1.png')
+    img = loadImage('koi4.png') 
+    // img2 = loadImage('koidock1.png')
     // createCanvas(windowWidth , windowHeight)
     // img = loadImage('koi2.png') 
 
@@ -59,7 +62,7 @@ export function draw() {
     if (sensor !== null){
         let a = sensor[0]
         console.info(sensor[2])
-        let x = map(sensor[1], -100,0,200,900) 
+        let x = map(sensor[1], -100,0,0,900) 
 
         push ()
         translate(x,300) 

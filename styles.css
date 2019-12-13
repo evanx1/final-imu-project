@@ -1,10 +1,18 @@
 body {
     margin: 0;
 }
+#koidock1 {
+
+    position: absolute;
+    left: 0;
+    top: 25% 
+}
 
 canvas { 
     position: absolute;
     left: 0;
     top: 0;
+
+    
 }
 
