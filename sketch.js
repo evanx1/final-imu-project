@@ -3,15 +3,19 @@ import { onSensorData } from 'https://cdn.jsdelivr.net/npm/imu-tools@0.0.7/index
 onSensorData(handleSensorData) 
 
 let img
+let img2
 let x = 0
 let y = 0 
 let sensor = null
 let first = false
 let mySound;
+let mySound2;
 let button;
 // let liquid
 
 export function preload(){
+    mySound2 = loadSound('ZEN.wav');
+    // mySound2.loop();
     mySound = loadSound('koi fish.wav');
     // mySound.play();
 }
@@ -21,6 +25,7 @@ export function setup() {
 
     createCanvas(windowWidth , windowHeight)
     img = loadImage('koi2.png') 
+    img2 = loadImage('koidock1.png')
     button = createButton('play me!')
     button.position(350,200)
     button.mousePressed(liquid)
@@ -31,6 +36,7 @@ export function setup() {
 }
 function liquid(){
      mySound.loop();
+     mySound2.loop();
 }
 
 // Code in this function is run once per frame. If it draws the same thing each
