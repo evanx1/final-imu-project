@@ -20,3 +20,8 @@ Follow the instructions on that page for use.
 ## License
 
 MIT
+
+## Acknowledgements
+
+I recieved help from various sources with my code, primarily through the Movement Practice Class Professors. As well, I recieved help from Cara with figuring out my IMU orientation. In terms of other aspeccts of my code and animations, I did these parts on my own. 
+The musical track in my project was composed/produced by me, and the water noises were taken from Freesound.org
